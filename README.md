@@ -2,6 +2,8 @@
 
 A REST API written in Go that says hello.
 
+HELLLLOOO!
+
 ## Usage
 
 Run the API.
