@@ -22,5 +22,7 @@ func main() {
 	log.Println("Hi from Nick 2!")
 
 	log.Println("Hi from Dan")
+
+	log.Println("Help! Mike sank the row boat! -Nick1")
 	log.Fatal(http.ListenAndServe(cfg.Addr, &api.Handler{Message: cfg.Message, Version: version}))
 }
