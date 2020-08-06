@@ -18,8 +18,8 @@ func main() {
 	envconfig.MustProcess("", &cfg)
 
 	log.Printf("starting to listen on addr %v", cfg.Addr)
-	log.Println("Hi from Nick!")
+	log.Println("Where are my pancakes?")
 
-	log.Println("Hi from Dan")
+	log.Println("They are: ")
 	log.Fatal(http.ListenAndServe(cfg.Addr, &api.Handler{Message: cfg.Message, Version: version}))
 }
