@@ -8,7 +8,7 @@ import (
 	"github.com/kelseyhightower/envconfig"
 )
 
-const version = "1.3.1"
+const version = "1.5.0"
 
 func main() {
 	var cfg struct {
@@ -22,7 +22,8 @@ func main() {
 	log.Println("Hi from Nick 2!")
 
 	log.Println("Hi from Dan")
-
 	log.Println("Help! Mike sank the row boat! -Nick1")
+	log.Println("rawr")
+
 	log.Fatal(http.ListenAndServe(cfg.Addr, &api.Handler{Message: cfg.Message, Version: version}))
 }
