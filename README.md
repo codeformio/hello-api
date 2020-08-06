@@ -1,5 +1,7 @@
 # Hello API
 
+Current Version: v1.5.0
+
 A REST API written in Go that says hello.
 
 HELLLLOOO!
